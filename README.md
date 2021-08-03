@@ -74,16 +74,16 @@ Step-2:Go to Url section and paste---> http://localhost:8100/process/api/v1/Proc
 Method:POST
 Step-3: Go to Body Section and add the below Json object.
 { "aadharNumber":420559429029, "pensionAmount":24400.0, "bankCharge":500 }
-Step-4:Go to Authorization Section: Select token type as Bearer ,next paste the token there./
-Step-5:Now check response section,/
-i)If token is valid and entered details are also valid  ,and for that user if bank type is Private and bank charge is 550 then a response of status code-10 will be returned otherwise 21 will be returned./
-ii)If token is valid and entered details are also valid  , and for that user if bank type is Public and bank charge is 500 then a response of status code-10 will be returned otherwise 21 will be returned./
+Step-4:Go to Authorization Section: Select token type as Bearer ,next paste the token there.\
+Step-5:Now check response section,\
+i)If token is valid and entered details are also valid  ,and for that user if bank type is Private and bank charge is 550 then a response of status code-10 will be returned otherwise 21 will be returned.\
+ii)If token is valid and entered details are also valid  , and for that user if bank type is Public and bank charge is 500 then a response of status code-10 will be returned otherwise 21 will be returned.\
 iii)If token is invalid then an exception will be thrown.
 # 5. Pension Management portal:
-Functionality:/
-Pension Management Portal must allow admin to Login. Once successfully logged in, then do the following operations:/
-a) Finds all Pensioner Details./
-b) Invokes the Pensioner details microservice and displays pensioner Details by Aadhar Card Number./
-c)Displays the Calculated pension amount./
+Functionality:\
+Pension Management Portal must allow admin to Login. Once successfully logged in, then do the following operations:\
+a) Finds all Pensioner Details.\
+b) Invokes the Pensioner details microservice and displays pensioner Details by Aadhar Card Number.\
+c)Displays the Calculated pension amount.\
 d)Returns a Status code based on Bank type and Bank Charge.
 
