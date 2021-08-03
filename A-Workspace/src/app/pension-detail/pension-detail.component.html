@@ -1,0 +1,63 @@
+<div class="container1"  align="right" >
+	
+	<button type="submit"  class="btn-grad"(click)="home()">home</button>
+
+</div>
+<div class="container" align="center" >
+
+    <h2>Pension Detail</h2>
+    <form (ngSubmit)="getPensionDetail(pensionDetail.value)" #pensionDetail="ngForm" ngNativeValidate>
+        <table >
+            <tr>
+                <td>Aadhar Number:</td>
+                <td><input type="number" class="form-control" name="aadharNumber" id="aadharNumber" required ngModel /></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" class="form-control" name="name" id="name" required ngModel/></td>
+            </tr>
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date" class="form-control" name="dateOfBirth" id="dateOfBirth" required ngModel /></td>
+            </tr>
+            <tr>
+                <td>Pan Number:</td>
+                <td><input type="text" class="form-control" name="pan" id="pan" required ngModel/></td>
+            </tr>
+            <tr>
+                <td>Pension Type:</td>
+                <td><input type="text" class="form-control" name="pensionType" id="pensionType" required ngModel/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" class="form__button"
+                    value="Submit"/></td>
+            </tr>
+        </table>
+    </form>
+    <div>
+        <h2>Pension Details</h2>
+        
+    
+    <br>
+    <table class="table table-striped table-bordered" border="1" class="table"  >
+        <tr class="tr">
+            <th>Name</th>
+            <th>DateOfBirth</th>
+            <th>PAN</th>
+            <th>PensionType</th>
+            <th>pensionAmount</th>
+
+        </tr>
+            <tr *ngIf="p">
+            <td>{{p.name}}</td>
+            <td>{{p.dateOfBirth}}</td>
+            <td>{{p.pan}}</td>
+            <td>{{p.pensionType}}</td>
+            <td>{{p.pensionAmount}}</td>
+            
+
+        </tr>
+        
+    </table>
+</div>
+    </div>

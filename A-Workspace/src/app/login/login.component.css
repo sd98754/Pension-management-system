@@ -1,0 +1,141 @@
+/*body {
+    padding-top:100px;
+}
+fieldset {
+    border: thin solid #ccc; 
+    top:50%;
+    left:50%;
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 40px;
+    background: #9ecc69;
+}
+
+legend {
+   color: rgb(51, 26, 37);
+}
+.form-control {
+    width: 95%;
+}
+
+span.req {
+    color:maroon;
+    font-size: 112%;
+}
+
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#6abadeba;  
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #7bdd54;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+}  
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+#userName{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#password{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+  
+  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: grey;  
+} */
+
+html{
+    height: 100%;
+}
+  button {   
+         background-color: #dbdbdf;   
+         width: 100%;  
+            
+          padding: 15px;   
+          margin: 10px 0px;   
+          border: none;   
+          cursor: pointer;   
+           }   
+    h1{
+        align-self: center;
+
+    }
+    p{
+        align-self: center;
+    }
+   form { 
+        
+        width: 350px;
+           
+      }   
+   input[type=text], input[type=password] {   
+          width: 100%;   
+          margin: 8px 0;  
+          padding: 12px 20px;   
+          display: inline-block;   
+           
+          box-sizing: border-box;   
+      }  
+   button:hover {   
+          opacity: 0.7;   
+      }   
+   .container1{
+       padding: 25px;
+       
+   }
+       
+       
+   .container {   
+        width: 350px;
+          padding: 25px;   
+          border: 3px solid #f1f1f1;
+          margin: auto; 
+          border-radius: 10%;
+          align-self: center;
+      } 
+        
+  footer
+  {
+    background: rgb(166,60,149);
+    background: linear-gradient(90deg, rgba(166,60,149,1) 0%, rgba(148,223,233,1) 100%);  
+      
+  }

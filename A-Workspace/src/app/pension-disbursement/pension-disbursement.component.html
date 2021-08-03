@@ -1,0 +1,39 @@
+<div class="container1"  align="right" >
+	
+	<button type="submit"  class="btn-grad"(click)="home()">home</button>
+
+</div>
+
+<div class="container" align="center" >
+	<h1>Pension Disbursement</h1><br><br>
+	
+		<form #disbursement="ngForm" (ngSubmit)="pensionDisbursement(disbursement.value)" id="box" ngNativeValidate>
+			<h2>Enter Details</h2><br><br>
+			<table>
+				<tr>
+					<td>Aadhar Number:</td>
+					<td><input type="number" class="form-control" name="aadharNumber" id="aadharNumber" required ngModel /></td>
+				</tr>
+				<tr>
+					<td>Pension Amount:</td>
+					<td><input type="number" class="form-control" name="pensionAmount" id="pensionAmount" ngModel required/></td>
+				</tr>
+				<tr>
+					<td>Bank Charge:</td>
+					<td><input type="number" class="form-control" name="bankCharge" id="bankCharge" ngModel required/></td>
+				</tr><br><br>
+
+            
+			<tr>
+				
+                <td colspan="2"><input type="submit" class="form__button" class="btn-grad" 
+                    value="Submit"/></td>
+					
+            </tr>
+			</table>
+		</form>
+		<div *ngIf="code">
+			<h2>StatusCode:{{code}}</h2>
+		</div>
+		</div>
+	

@@ -1,0 +1,34 @@
+<div class="container1"  align="right" >
+	
+	<button type="submit"  class="btn-grad"(click)="home()">home</button>
+
+</div>
+<h1>Process Pension</h1>
+<div class="container"   align="center">
+		
+		<form #processPensiondetails="ngForm" (ngSubmit)="processPension(processPensiondetails.value)" id="box" ngNativeValidate >
+			<h2>Enter the Details</h2>
+			<table>
+				<tr>
+					<td>Aadhar Number:</td>
+					<td><input type="number" class="form-control" name="aadharNumber" id="aadharNumber" required ngModel /></td>
+				</tr><br>
+				<tr>
+					<td>Pension Amount:</td>
+					<td><input type="number" class="form-control" name="pensionAmount" id="pensionAmount" required ngModel/></td>
+				</tr><br>
+				<tr>
+					<td>Bank Charge:</td>
+					<td><input type="number" class="form-control" name="bankCharge" id="bankCharge" required ngModel /></td>
+				</tr><br>
+				<tr>
+					<td colspan="2"><input type="submit" class="form__button"
+						value="Submit"/>
+					</td>
+				</tr><br>
+            </table>
+			</form>
+			<div *ngIf="processPensionOutput">
+			<h2>StatusCode:{{processPensionOutput}}</h2>
+		</div>
+		

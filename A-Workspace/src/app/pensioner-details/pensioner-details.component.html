@@ -1,0 +1,39 @@
+<div class="container1"  align="right" >
+	
+	<button type="submit"  class="btn-grad"(click)="home()">home</button>
+
+</div>
+<h1 align="center">Available Pensioner Details</h1>
+<div class="container">
+    
+    <br>
+    <table class="table table-striped table-bordered" border="1">
+        <tr>
+            <th>Aadhar Number</th>
+            <th>Name</th>
+            <th>DateOfBirth</th>
+            <th>PAN</th>
+            <th>Salary</th>
+            <th>Allowances</th>
+            <th>Pension Type</th>
+            <th>Bank Name</th>
+            <th>Account Number</th>
+            <th>Bank Type</th>
+        </tr>
+        <tr *ngFor="let p of detailsList">
+            <td>{{p.aadharNumber}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.dateOfBirth}}</td>
+            <td>{{p.pan}}</td>
+            <td>{{p.salaryEarned}}</td>
+            <td>{{p.allowances}}</td>
+            <td>{{p.pensionType}}</td>
+            <td>{{p.bankName}}</td>
+            <td>{{p.accountNumber}}</td>
+            <td>{{p.bankType}}</td>
+            
+
+        </tr>
+        
+    </table>
+</div>

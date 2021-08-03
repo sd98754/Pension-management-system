@@ -1,0 +1,29 @@
+h1{
+  text-align:center ;
+}
+.btn-grad {background-image: linear-gradient(to right, #e47c7c86 0%, #98dfe0  51%, #e7e978  100%)}
+.btn-grad {
+   
+   padding: 5px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   border-radius: 10px;
+   
+ }
+
+ 
+
+ #box {
+  border-radius: 25px;
+  border-color: dimgray;
+  background-position: left top;
+  background-repeat: repeat;
+  background-color: gainsboro;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  align-self: center;
+  margin:10px;
+  border: 3px solid #f1f1f1;
+}
